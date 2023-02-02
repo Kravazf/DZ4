@@ -5,8 +5,88 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Selector.Specificity</title>
+    <link rel="stylesheet" href="./CSS/style.css">
 </head>
 <body>
-    
+
+    <header>
+        <h1>Селектори,Специфіка:</h1>
+
+    </header>
+
+    <main>
+        <ul>
+            <li>
+                <p>
+                    *{margin: 10px;} - універсальний селектор, задасть відступи в 10px для всіх елементів сайту.
+                </p>
+            </li>
+            <li>
+                <p>
+                    h1 {color: blue;} - теговий селектор, задасть синій колір для тексту тегу h1.
+                </p>
+            </li>
+            <li>
+                <p class="class1">
+                    .class1 {color: red;} - селектор классу, задасть червоний колір для всіх елементів з ім'ям классу class1.
+                </p>
+            </li>
+            <li>
+                <p id="zf">
+                    #zf {color: green;} - селектор ідентифікатора, задасть зелений колір для елементу з унікальним ім'ям ідентифіктора zf.
+                </p>
+            </li>
+            <li>
+                <h2>h3, h2, a {backgraund: red;} - селектор групп, задасть червоний колір фону всіх елементів блоку h3,h2 та a </h2>
+                <a href="https://validator.w3.org/nu/#textarea">Перевірити валідність коду</a>
+                <h3>Третій заголовок</h3>
+            </li>
+            <li>
+                <ol>
+                    <li>ol li {font-weight: bold} - селектор потомка</li>
+                    <li>Задасть всім елементам потомкам жирний шрифт, в данному випадку всім елементам li, що знаходиться в ol</li>   
+                </ol>
+            </li>
+            <li>
+                <div>
+                    <p>Параграф0</p>
+                    <p>Параграф1</p>
+                        <h4>div > p - дочірній селектор, задасть відступ 300рх елементам (p) з текстом "Параграф0 та Параграф1", які являються дочірніми елементами div</h4>     
+                
+                </div>
+            </li>
+            <li>
+                <h6>h6 + p {color: brown;} Сусідній селектор, задасть коричневий колір першому сусіду, який знаходиться відразу після батьківського h6</h6>
+                <p>Параграф3</p>
+                <p>Параграф4</p>
+                <p>Параграф5</p>
+            </li>
+            <li>
+                <div>
+                    <p>p ~ span {bacground-color: yellowgreen;} задасть жовотозелений фон, всім елементам (span) які стоять після вказанго елемента(p) в яких є общий родитель</p>
+                    <span>Спан1</span>
+                    <span>Спан2</span>
+                    <cite>Цитата<span>Спан3</span></cite>
+                    <span>Спан4</span>
+                </div>
+            </li>
+            <li>
+                <ul>
+                    <li><input type="email"> [type="email"] {background: yellow} - селектор атрибута, задаст атрибуту зі значенням email жовтий фон</li>
+                    <li><input type="number">введіть пароль</li>
+                </ul>
+            </li>
+            
+
+           
+        </ul>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+
 </body>
 </html>

@@ -1,0 +1,39 @@
+h1 {
+    color: blue;
+}
+
+* {
+    margin: 10px;
+}
+
+.class1 {
+    color: red;
+}
+
+#zf {
+    color: green;
+}
+
+h3, h2, a {
+    background: red;
+}
+
+ol li {
+    font-weight: bold;
+}
+
+div > p {
+    padding-left: 300px;
+}
+
+h6 + p {
+    color:brown
+}
+
+p ~ span {
+    background-color: yellowgreen;
+}
+
+[type="email"] {
+    background: yellow;
+}
